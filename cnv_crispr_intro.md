@@ -1,15 +1,15 @@
 # Homework - Copy Number Variation and CRISPR
 ## Objectives
 
-Align a CSV file of your choice, identify Copy Number Vatiation (CNV) in the given region and how this would impact designing CRISPR guide RNAs. In addition, generally comment on the “shape” of the data and any interesting trends or patterns you find.
+Using CRISPR library data supplied and Copy Number Variation (CNV) data of your choice, identify relationships between CNV and CRISPR guide RNA activity. This CRISPR library was conducted in the A375 melanoma cell line, so CNV and genotype information should be obtained for this cell line using published literature or cell line databases. The data source should be justified.
 
 ## Rules
-This task is un-timed. You may use any programming language, libraries, or frameworks available to you provided they are available to others to reproduce your analysis. You should clearly distinguish your original code from 3rd party code. Clearly demonstrating your process and laying out your “thoughts in code” is more important than runtime performance. We must be able to re-create your analysis. Organisation counts and the ability to layout and document a source repository in a sensible way is part of the assignment. Formal unit testing is not required, but one should provide evidence there analysis was executed as intended and results are due to errors like improper parameters.
+This task is un-timed. You may use any programming language, libraries, or frameworks available to you provided they are available to others to reproduce your analysis. You should clearly distinguish your original code from 3rd party code. Clearly demonstrating your process and laying out your “thoughts in code” is more important than runtime performance. We must be able to re-create your analysis. Organisation counts and the ability to layout and document a source repository in a sensible way is part of the assignment. Formal unit testing is not required, but one should provide evidence their analysis was executed as intended and results are not due to errors like improper parameters.
 
 ## Instructions
 For this repository, write one or more scripts to analyze the included guide_data.tsv file, then make a pull request back with your code and email getin@desktopgenetics.com with the subject “Homework Complete” including a summary of your results. You may also want to generate documents, makefiles, plots, figures, or other pieces of code to support your analysis or allow it to be reproduced by us.
 
-In addtion, you should then prepare a 30 minute presentation on your approach and findings for the Desktop Genetics team. 
+In addition, you should then prepare a 30 minute presentation on your approach and findings for the Desktop Genetics team. 
 
 In your analysis, consider the following topics:
 
