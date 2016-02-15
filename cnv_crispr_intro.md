@@ -1,13 +1,13 @@
 # Homework - Copy Number Variation and CRISPR
 ## Objectives
 
-Using CRISPR library data supplied and Copy Number Variation (CNV) data of your choice, identify relationships between CNV and CRISPR guide RNA activity. This CRISPR library was conducted in the A375 melanoma cell line, so CNV and genotype information should be obtained for this cell line using published literature or cell line databases. The data source should be justified.
+Using CRISPR library data supplied and Copy Number Variation (CNV) data of your choice, identify relationships between CNV of target site and CRISPR guide activity. This CRISPR library was conducted in the A375 melanoma cell line, so CNV and genotype information should be obtained for this cell line using published literature or cell line databases. The data source should be justified.
 
 ## Rules
 This task is un-timed. You may use any programming language, libraries, or frameworks available to you provided they are available to others to reproduce your analysis. You should clearly distinguish your original code from 3rd party code. Clearly demonstrating your process and laying out your “thoughts in code” is more important than runtime performance. We must be able to re-create your analysis. Organisation counts and the ability to layout and document a source repository in a sensible way is part of the assignment. Formal unit testing is not required, but one should provide evidence their analysis was executed as intended and results are not due to errors like improper parameters.
 
 ## Instructions
-For this repository, write one or more scripts to analyze the included guide_data.tsv file, then make a pull request back with your code and email getin@desktopgenetics.com with the subject “Homework Complete” including a summary of your results. You may also want to generate documents, makefiles, plots, figures, or other pieces of code to support your analysis or allow it to be reproduced by us.
+For this repository, write one or more scripts to analyse the included guide_data.tsv file, then make a pull request back with your code and email getin@desktopgenetics.com with the subject “Homework Complete” including a summary of your results. You may also want to generate documents, makefiles, plots, figures, or other pieces of code to support your analysis or allow it to be reproduced by us.
 
 In addition, you should then prepare a 30 minute presentation on your approach and findings for the Desktop Genetics team. 
 
@@ -29,18 +29,21 @@ The host cell will then attempt to repair this cut with one of several different
 When there are numerous copies of the target sequence, the nuclease cannot differentiate between which is the right and wrong sequence to cut and therefore causes excess DNA cutting. We call this "off target effects" which means nuclease activity in multiple locations and there is a loss in specificity of the CRISPR cut. By identifying where these problematic regions in the genome exist, we can target around that region and therefore sidestep cutting errors.
 
 ## Sample Dataset
-We have provided a **Knock-out CRISPR dataset** (`data/crispr_guide_data.tsv`) from [Shalem et al. 2014](http://www.ncbi.nlm.nih.gov/pubmed/24336571). This is a pooled CRISPR library targeting essential genes. CRISPR-Cas9 induced gene disruption will result in cell death/ growth arrest for essential genes, and this will be reflected by a relative decrease in NGS read count.
+We have provided a **Knock-out CRISPR dataset** (`data/crispr_guide_data.tsv`) from [Shalem et al. 2014](http://www.ncbi.nlm.nih.gov/pubmed/24336571). This is a pooled CRISPR library targeting essential genes. CRISPR-Cas9 induced gene disruption will result in cell death/ growth arrest genes essential to cell viability, and this will be reflected by a relative decrease in NGS read count.
 
-The reads have been counted, and normalised, and the data has been processed into a .tsv format showing  for each guide RNA the 20bp spacer sequence (excluding the PAM sequence), the target gene, and experimental readouts at various timepoints:
+The reads have been counted, and normalised, and the data has been processed into .tsv format showing for each guide RNA the 20bp spacer sequence (excluding the PAM sequence), the target gene, and experimental readouts at various timepoints:
  - **plasmid** represents the baseline counts, prior to CRISPR
-2 replicates each for:
+
+2 replicates each for post-CRISPR timepoints:
  - **D7** read counts taken 7 days after drug selection for viral integration of CRISPR construct
  - **D14** read counts taken 14 days after drug selection for viral integration of CRISPR construct
 
+
 Cell-line specific **CNV/ genotype** information:
-You may use any dataset you deem appropriate to obtain CNV (and genotype) information specific to A375 cells. You will be expected to justify your choice of data source.
+    You may use any dataset you deem appropriate to obtain CNV (and genotype) information specific to A375 cells. You will be expected to justify your choice of data source.
 
 ## Prior Art 
 
+To add additional flavour to this task, **CRISPR guides are not all created equal**. Guides have various intrinsic and extrinsic factors that affect their on-target activity at the intended site and specificity (off-target activity). It is an active interest of Desktop Genetics, and the CRISPR community as a whole to understand guide characteristics that allow accurate prediction of activity. Although analyses of these factors is outside the scope of this homework assignment, it is important to bear them in mind.
 
 
