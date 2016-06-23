@@ -1,2 +1,2 @@
-# cnv-crispr
+# omics-crispr
 Exploring relationships between 'omics datasets and CRISPR guide activity
