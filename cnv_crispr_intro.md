@@ -1,7 +1,7 @@
-# Homework - Copy Number Variation and CRISPR
+# Homework - 'Omics data and CRISPR
 ## Objectives
 
-Using CRISPR library data supplied and Copy Number Variation (CNV) data of your choice, identify relationships between CNV of target site and CRISPR guide activity. This CRISPR library was conducted in the A375 melanoma cell line, so CNV and genotype information should be obtained for this cell line using published literature or cell line databases. The data source should be justified.
+Using CRISPR library data supplied and A375 'omics data of your choice, identify relationships between target site status and CRISPR guide activity. This CRISPR library was conducted in the A375 melanoma cell line, so 'omics data should be obtained for this cell line using published literature or cell line databases. Examples of 'omics datasets could be RNA-seq, chromatin accessibility (e.g. MNase-seq, ATAC-seq, DNase-seq, ChIP-seq), copy-number variation, or genotype data. The data source should be justified.
 
 ## Rules
 This task is un-timed. You may use any programming language, libraries, or frameworks available to you provided they are available to others to reproduce your analysis. You should clearly distinguish your original code from 3rd party code. Clearly demonstrating your process and laying out your “thoughts in code” is more important than runtime performance. We must be able to re-create your analysis. Organisation counts and the ability to layout and document a source repository in a sensible way is part of the assignment. Formal unit testing is not required, but one should provide evidence their analysis was executed as intended and results are not due to errors like improper parameters.
@@ -13,9 +13,9 @@ In addition, you should then prepare a 30 minute presentation on your approach a
 
 In your analysis, consider the following topics:
 
-1. Which guide-targeted regions of the A375 genome exhibit the most extreme CNV?
+1. Which guide-targeted regions of the A375 genome exhibit the most diverse target site status based on 'omics data?
 
-2. What statistical tests are appropriate to analyse CRISPR guide activity vs CNV?
+2. What statistical tests are appropriate to analyse CRISPR guide activity vs target site status?
 
 3. Readability and modularity of your code. We would like to understand how it works and how to re-use it. Useability should be well documented, as well as your thought process for code development and organisation.
 
@@ -39,8 +39,8 @@ The reads have been counted, and normalised, and the data has been processed int
  - **D14** read counts taken 14 days after drug selection for viral integration of CRISPR construct
 
 
-Cell-line specific **CNV/ genotype** information:
-    You may use any dataset you deem appropriate to obtain CNV (and genotype) information specific to A375 cells. You will be expected to justify your choice of data source.
+Cell-line specific **'omics** data:
+    You may use any dataset you deem appropriate to obtain a genome-wide readout specific to A375 cells. You will be expected to justify your choice of data source.
 
 ## Prior Art 
 
