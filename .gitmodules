@@ -1,0 +1,3 @@
+[submodule "newproject"]
+	path = newproject
+	url = https://github.com/raagbtitl/newproject.git
